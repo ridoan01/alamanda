@@ -9,11 +9,7 @@ class Admin extends MX_Controller {
     }
 
     public function index(){
-        $msg = "Admin Page";
-        echo "<pre>";
-        print_r ($msg);
-        echo "</pre>";
-        
+       $this->load->view('LoginForm');
         
     }
     public function new()
@@ -36,7 +32,7 @@ class Admin extends MX_Controller {
         echo "Admin list"; 
         # code...
     }
-    public function login()
+    public function do_login()
     {
         echo "Admin Login";
         # code...
